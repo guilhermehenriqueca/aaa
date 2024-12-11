@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="bb.css">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 17px 20px; background-color: rgb(202, 204, 203);">
+            <h1 style="margin: 0;">FocusFlow</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="calendario">
+            <h2>Calendário</h2>
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <span id="month-year"></span>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div class="calendar">
+                <!-- Cabeçalhos dos dias da semana -->
+                <div class="day">Dom</div>
+                <div class="day">Seg</div>
+                <div class="day">Ter</div>
+                <div class="day">Qua</div>
+                <div class="day">Qui</div>
+                <div class="day">Sex</div>
+                <div class="day">Sáb</div>
+                <!-- Dias do calendário preenchidos pelo JavaScript -->
+                <div id="calendar-days"></div>
+            </div>
+
+            <div id="tasks-section">
+                <h3>Tarefas de <span id="selected-date"></span></h3>
+                <ul id="task-list"></ul>
+                <button id="add-task-btn">Adicionar Tarefa</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 10px;">&copy; 2024 FocusFlow. Todos os direitos reservados.</p>
+    </footer>
+    <script src="bb.js"></script>
+</body>
+
+</html>
